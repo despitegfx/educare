@@ -1,0 +1,56 @@
+.main-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+    color: white;
+    flex-wrap: wrap;
+}
+
+.text:hover{
+    background: rgb(0, 72, 206);
+    transition: 0.3s ease-in-out;
+}
+
+.text:active{
+    background: rgb(9, 95, 255);
+    transition: 0.3s ease-in-out;
+}
+
+span {
+    width: 250px;
+    height: 70px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    column-gap: 20px;
+    padding-inline: 30px;
+    font-size: 1.6rem;
+    background: rgb(0, 89, 255);
+}
+
+span i {
+    font-size: 2rem;
+}
+
+b{
+    padding: 10px;
+    text-wrap: wrap;
+    color: rgb(185, 205, 222);
+    align-items: center;
+    display: flex;
+    font-size: 1.2rem;
+}
+
+.admission{
+    background: rgb(226, 236, 255);
+    border-style: solid;
+    border-color:  rgb(0, 89, 255);
+    color: rgb(0, 89, 255);
+    border-width: 3px;
+
+}
