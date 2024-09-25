@@ -1,0 +1,19 @@
+<div class="container">
+    <app-card></app-card>
+
+     <be-grid
+        [width]="'100%'"
+        [height]="'500px'"
+        [rowData]="ELEMENT_DATA"
+        [defColumns]="defColumns"
+        [paging]="true"
+        [filter]="true"
+        [actionColumnSticky]="true"
+        [columnPanel]="true"
+        (rowClick)="onSelectedRow($event)"
+        (onActionButton)="onSelectedRow($event)"
+        (rowSelection)="rowSelection($event)"
+        ></be-grid>
+
+</div>
+

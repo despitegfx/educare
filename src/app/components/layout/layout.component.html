@@ -1,0 +1,33 @@
+<div>
+ <nav class="nav-bar">
+    <span class="icon-title"><i class="fa-regular fa-face-grin-squint-tears"></i>EDUCARE</span>
+    <div class="right-group">
+        <span class="add-user-btn"><i class="fa-solid fa-user-plus"></i>Add User</span><span class="delimiter">|</span>
+
+        <span class="profile">
+          <i [matMenuTriggerFor]="beforeMenu" class="fa-solid fa-circle-user"></i>
+            <mat-menu #beforeMenu="matMenu" xPosition="before">
+              <p>Profile</p>
+              <p>Logout</p>
+            </mat-menu>
+         </span>
+    </div>
+ </nav>
+ <mat-drawer-container class="example-container" autosize>
+    <mat-drawer #drawer class="example-sidenav" mode="side">
+      <span></span>
+      <p [routerLink]="['/dashboard']" routerLinkActive="router-link-active"><i class="fa-solid fa-school"></i>Dashboard</p><hr>
+      <p [routerLink]="['/attendance']" routerLinkActive="router-link-active"><i class="fa-solid fa-door-open"></i>Attendance</p><hr>
+      <p [routerLink]="['/report']" routerLinkActive="router-link-active"><i class="fa-regular fa-folder-open"></i>Reports</p><hr>
+      <p [routerLink]="['/materials']" routerLinkActive="router-link-active"><i class="fa-solid fa-toilet-paper"></i>Materials</p>
+    </mat-drawer>
+    <div class="example-sidenav-content">
+      <span class="click-to-show-btn" (click)="drawer.toggle(); changeContentValue()">{{ contentValue }}</span>
+    </div>
+
+    <div class="main-content">
+        <router-outlet></router-outlet>
+    </div>
+  </mat-drawer-container>
+</div>
+

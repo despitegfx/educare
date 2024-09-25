@@ -1,0 +1,154 @@
+
+.nav-bar{
+    background: rgb(241, 241, 241); 
+    padding-block: 15px;
+    font-size: 30px;
+    color: rgb(0, 89, 255);
+    font-weight: bolder;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-bottom-style: solid;
+    border-bottom-color:rgb(234, 234, 234); 
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 101;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+
+.icon-title{
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+    margin-left: 25px;
+}
+
+.right-group{
+    margin-right: 25px;
+    font-size: 20px;
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+    font-weight:300;
+}
+
+.add-user-btn{
+    background: rgb(0, 89, 255);
+    padding-block: 10px;
+    padding-inline: 15px;
+    border-radius: 7px;
+    color: whitesmoke;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.delimiter{
+    color: rgb(188, 188, 188);
+}
+
+.profile{
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.add-user-btn:hover{
+    background: rgb(0, 72, 206);
+    transition: 0.3s ease-in-out;
+}
+
+.add-user-btn:active{
+    background: rgb(9, 95, 255);
+    transition: 0.3s ease-in-out;
+}
+
+.example-container{
+    background: none;
+}
+
+.example-sidenav-content{
+    min-height: 100vh;
+    background: rgb(234, 234, 234);
+    width: 3px;
+    margin-left: 30px;
+    position: fixed;
+    z-index: 100;
+    margin-block-start:75px;
+}
+
+.example-sidenav{
+    padding-inline-start: 25px;
+    border: none;
+    background: none;
+    font-size: 20px;
+    position: fixed;
+    z-index: 102;
+    margin-block-start:90px;
+}
+
+.example-sidenav p{
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+    color: rgb(0, 89, 255);
+    cursor: pointer;
+}
+
+.example-sidenav p:hover{
+    color: rgb(52, 123, 255);
+    transition: 0.3s ease-in;
+}
+
+.example-sidenav p:active{
+    color: rgb(0, 73, 210);
+}
+
+
+
+.click-to-show-btn{
+      position: absolute; 
+      background: rgb(0, 89, 255); 
+      color: white;
+      width: 40px; 
+      height: 40px; 
+      display: flex; 
+      align-items: center; 
+      justify-content: center;
+      left: -21px;
+      top: 50px;
+      border-radius: 50%;
+      border-style: solid;
+      border-color: rgb(238, 241, 245);
+      cursor: pointer;
+      visibility: hidden;
+}
+
+.example-sidenav-content:hover > .click-to-show-btn{
+    visibility: visible;
+}
+
+.click-to-show-btn:hover{
+    background: rgb(41, 116, 255); 
+    transition: 0.3s ease-in;
+}
+
+.click-to-show-btn:active{
+    background: rgb(0, 73, 210); 
+}
+
+.main-content{
+    margin-inline-start: 70px;
+    margin-inline-end: 30px;
+    margin-block-start: 110px;
+    max-width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Mat custom */
+
+::ng-deep .mat-mdc-menu-content{
+    padding: 8px 17px !important;
+}

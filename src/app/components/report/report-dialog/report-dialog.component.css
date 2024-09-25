@@ -1,0 +1,87 @@
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    /* row-gap: 10px; */
+}
+
+.dialog-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background:  rgb(9, 95, 255);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 25px;
+}
+
+.action-btn{
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.dialog-content{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    font-size: 20px;
+}
+
+.sender-details{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.report{
+    display: flex;
+    flex-direction: column;
+}
+
+.report input{
+    height: 40px;
+    padding-inline: 10px;
+   
+}
+
+.report textarea{
+  height: 200px;
+  padding: 10px;
+}
+
+.report textarea, input{
+    outline: none;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1.5px;
+    background: rgb(244, 244, 244);
+    border-color: rgb(233, 233, 233);
+    font-size: 20px;
+    color: rgb(55, 55, 55);
+}
+
+.btn{
+    padding-block: 15px;
+    padding-inline: 25px;
+    font-size: 15px;
+    max-width: fit-content;
+    background: rgb(9, 95, 255);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background: rgb(41, 116, 255); 
+    transition: 0.3s ease-in;
+}
+
+.btn:active{
+    background: rgb(0, 73, 210); 
+}
+
+.btn[disabled] {
+    background:rgb(195, 195, 195);
+    color: rgb(143, 143, 143);
+}
